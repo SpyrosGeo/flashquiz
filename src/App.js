@@ -38,7 +38,7 @@ function App() {
     axios.get(URL,{
       params:{
         amount:amountEl.current.value,
-        category:categoryEl.current.value
+        category:categoryEl.current.value,
       }
     }).then(res => {
       setFlashcards(res.data.results.map((questionItem, index) => {
